@@ -4,11 +4,19 @@ body {
 }
 .about {
     margin-top: 100px;
-    background-color: #406c8e;
+    background-color: #212529;
+    color: #fff;
+
+    box-shadow: 0 0 0.4em olive;
+    border-radius: 10px;
 }
 
 .projects {
-    background-color: #b8a60a;
+    background-color: #212529;
+}
+
+footer {
+    background-color: olive;
 }
 
 h1 {
@@ -33,4 +41,20 @@ h1 {
         transform: translateY(-5px);
         box-shadow: none;
     }
+}
+.input-group-text {
+    background-color: olive;
+}
+
+.ocb {
+    background-color: olive;
+}
+
+.oct {
+    background-color: #212529;
+    color: #fff;
+}
+
+.project {
+    box-shadow: 0 0 0.4em olive;
 }

@@ -66,7 +66,7 @@
             </div>
         </nav>
         <!-- About Section -->
-        <section class="border about">
+        <section class=" about mx-1">
             <div class="card-body">
                 <h5 class="card-title">About Me</h5>
                 <p class="card-text">
@@ -97,7 +97,7 @@
                 "
             >
                 <div class="col-5">
-                    <div class="card bg-dark text-blue">
+                    <div class="card bg-dark project">
                         <img src="./imgs/iu-2.png" class="card-img" alt="..." />
                         <div class="card-img-overlay">
                             <h5 class="card-title"></h5>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 <div class="col-5">
-                    <div class="card bg-dark text-blue">
+                    <div class="card bg-dark project">
                         <img src="./imgs/iu-2.png" class="card-img" alt="..." />
                         <div class="card-img-overlay">
                             <h5 class="card-title"></h5>
@@ -113,7 +113,7 @@
                     </div>
                 </div>
                 <div class="col-5">
-                    <div class="card bg-dark text-blue">
+                    <div class="card bg-dark project">
                         <img src="./imgs/iu-2.png" class="card-img" alt="..." />
                         <div class="card-img-overlay">
                             <h5 class="card-title"></h5>
@@ -121,7 +121,7 @@
                     </div>
                 </div>
                 <di class="col-5">
-                  <div class="card bg-dark text-blue">
+                  <div class="card bg-dark project">
                     <img src="./imgs/iu-2.png" class="card-img" alt="..." />
                     <div class="card-img-overlay">
                         <h5 class="card-title"></h5>
@@ -149,7 +149,7 @@
             id="offcanvasWithBothOptions"
             aria-labelledby="offcanvasWithBothOptionsLabel"
         >
-            <div class="offcanvas-header">
+            <div class="offcanvas-header oct">
                 <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
                     Contact Me
                 </h5>
@@ -160,41 +160,24 @@
                     aria-label="Close"
                 ></button>
             </div>
-            <div class="offcanvas-body">
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-sm"
-                        >Name</span
-                    >
-                    <input
-                        type="text"
-                        class="form-control"
-                        aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-sm"
-                    />
+            <div class="offcanvas-body ocb">
+              <form>
+                <div class="form-group m-2">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                 </div>
-                <div class="input-group input-group-sm mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-sm"
-                        >Email</span
-                    >
-                    <input
-                        type="text"
-                        class="form-control"
-                        aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-sm"
-                    />
+                <div class="form-group m-2">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="email@your-email.com">
                 </div>
-                <div class="input-group">
-                    <span class="input-group-text">Message</span>
-                    <textarea
-                        class="form-control"
-                        aria-label="With textarea"
-                    ></textarea>
+                <div class="form-group m-2">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" maxlength="2000" rows="3" placeholder="Type your message here. (Max 2,000 characters.)" required=""></textarea>
                 </div>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button class="btn btn-primary m-2" type="button">
-                        Submit
-                    </button>
+                    <button class="btn btn-secondary m-2" type="submit">SEND</button>
                 </div>
+                <div id="output-area"></div>
+            </form>
             </div>
         </div>
 
@@ -205,7 +188,7 @@
                 justify-content-between
                 align-items-center
                 py-3
-                my-4
+                mt-4
                 border-top
             "
         >
@@ -224,16 +207,10 @@
                         <use xlink:href="#bootstrap"></use>
                     </svg>
                 </a>
-                <span class="text-muted">© Michael Kemm</span>
+                <span class="text-dark">© Michael Kemm</span>
             </div>
 
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3">
-                    <a class="text-muted" href="#"
-                        ><svg class="bi" width="24" height="24">
-                            <use xlink:href="#twitter"></use></svg
-                    ></a>
-                </li>
                 <li class="ms-3">
                     <i class="bi bi-linkedin m-5"></i>
                 </li>
@@ -244,7 +221,7 @@
         </footer>
 
         <!-- Optional JavaScript; choose one of the two! -->
-
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
