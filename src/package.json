@@ -1,0 +1,17 @@
+{
+    "name": "contact-form-demo",
+    "version": "1.0.0",
+    "description": "contact form",
+    "main": "index.js",
+    "scripts": {},
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-recaptcha": "^5.0.2",
+        "express-validator": "^6.5.0",
+        "form-data": "^4.0.0",
+        "mailgun.js": "^3.5.4",
+        "morgan": "^1.9.1"
+    }
+}
