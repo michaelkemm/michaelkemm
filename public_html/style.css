@@ -7,7 +7,7 @@ body {
     background-color: #212529;
     color: #fff;
 
-    box-shadow: 0 0 0.4em olive;
+    box-shadow: 0 3px 0.4em olive;
     border-radius: 10px;
 }
 
@@ -26,6 +26,7 @@ h1 {
 
 .scrolling-wrapper {
     overflow-x: auto;
+    box-shadow: 0 0 0.5em #212529;
 }
 
 .card-block {
@@ -56,5 +57,5 @@ h1 {
 }
 
 .project {
-    box-shadow: 0 0 0.4em olive;
+    box-shadow: 0 2px 0.3em 0.5em olive;
 }
