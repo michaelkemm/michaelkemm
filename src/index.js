@@ -5,13 +5,12 @@ const Recaptcha = require("express-recaptcha").RecaptchaV2
 const formData = require("form-data")
 const Mailgun = require("mailgun.js")
 const mailgun = new Mailgun(formData)
-require("dotenv").config()
 const { check, validationResult } = require("express-validator")
 
 const validation = [
 	check("name", "A valid name is required.").not().isEmpty().trim().escape(),
 	check("email", "Please provide a valid email.").isEmail(),
-	check("subject").optional().trim().escape(),
+	// check("subject").optional().trim().escape(),
 	check("message", " A message of 2000 characters or less is required.")
 		.trim()
 		.escape()
@@ -39,11 +38,11 @@ const handleGetRequest = (req, res) => {
 
 const handlePostRequest = (req, res) => {
 	res.append("Context-Type", "text/html")
-	// res.header('Access-Control-Allow-Origin', '*')
+	res.append("Access-Control-Allow-Origin", "*")
 
 	if (req.recaptcha.error) {
-		return response.send(
-			`<div class='alert alert-danger' role='alert'><strong>Oh snap!</strong>There was an error with Recaptcha please try again</div>`
+		return res.send(
+			`<div class='alert alert-danger' role='alert'><strong>Oh snap!</strong>There was an error with reCaptcha please try again</div>`
 		)
 	}
 
@@ -69,14 +68,12 @@ const handlePostRequest = (req, res) => {
 		.create(process.env.MAILGUN_DOMAIN, mailgunData)
 		.then((msg) =>
 			res.send(
-				`<div class='alert alert-success' role='alert'>${JSON.stringify(
-					msg
-				)}</div>`
+				`<div class='alert alert-success' role='alert'>Sent!</div>`
 			)
 		)
 		.catch((err) =>
 			res.send(
-				`<div class="alert alert-danger" role="alert"><strong>Oh snap!</strong>${err}</div>`
+				`<div class="alert alert-danger" role="alert"><strong>Oh snap!!!</strong>${err}</div>`
 			)
 		)
 }
