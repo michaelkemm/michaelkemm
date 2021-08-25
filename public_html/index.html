@@ -1,325 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!--fancy box-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
-        <!-- Bootstrap CSS -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-            crossorigin="anonymous"
-        />
-        <!-- Bootstrap Icons -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-        />
-        <!-- Local CSS -->
-        <link rel="stylesheet" href="style.css" />
-        <title>Michael Kemm</title>
-    </head>
-    <body>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <i class="bi bi-hurricane"></i>
-                </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                <span class="bi-arrow-down-circle-fill"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a
-                            class="nav-link active"
-                            aria-current="page"
-                            href="#about"
-                            >About</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                            class="nav-link active"
-                            aria-current="page"
-                            href=""
-                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                            Photography</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#projects"
-                                >Projects</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active"  href="" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasWithBothOptions"
-                            aria-controls="offcanvasWithBothOptions""
-                                >Contact</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- About Section -->
-        <section id="about" class=" about mx-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col md-6">
-                            <div class="card-body mx-1">
-                                <img class="img-thumbnail" src="./imgs/mk.png" />
-                                <p class="card-text mt-2">
-                                    Software Developer | Amature Photographer | Hiker
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col md-6">
-                            <div class="card-body mx-1">
-                                <h2 class="card-title">Who I am</h2>
-                                <ul>
-                                    <li>
-                                    I lived in Denver.</li>
-                                    <li>
-                                    I moved to Los Angeles.
-                                    </li>
-                                    <li>
-                                    I now live in Albuquerque.
-                                    </li>
-                                    <li>
-                                    I play video games more than I should. 
-                                    </li>
-                                    <li>
-                                    Or maybe I don't play them enough? 
-                                    </li>
-                                    <li>
-                                    I like taking pictures (click on photography).  
-                                    </li>
-                                    <li>
-                                    I like getting outdoors and going on hikes,  
-                                    </li>
-                                    <li>
-                                    I like telling computers what to do. 
-                                    </li>
-                                    <li>
-                                     Check out my code if you want to see how I do that.  
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <!-- On page link to photography -->
-        <h2 id="ph2" class="m-5 text-center"><a
-            class="nav-link active"
-            aria-current="page"
-            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-            Photography</a
-            >
-        <!-- On screen link to contact form -->
-        </h2>
-        <h2 id="ph2" class="m-5 text-center">
-            <a class="nav-link active"  href="" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions"
-            aria-controls="offcanvasWithBothOptions""
-                >Contact</a></h2>
-        <!--Photography-->
-        <section id="pics">
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header oct">
-                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                        Photography
-                    </h5>
-                    <button
-                        type="button"
-                        class="btn-close text-reset"
-                        data-bs-dismiss="offcanvas"
-                        aria-label="Close"
-                    ></button>
-                </div>
-                <div class="offcanvas-body ocb">
-                    <div class="">
-                        <div class="m-3">
-                                <a data-fancybox="gallery" href="./imgs/hall.png">
-                                <img class="img-thumbnail" src="./imgs/hall.png" />
-                                </a>
-                        </div>
-                        <div class="m-3">
-                                <a data-fancybox="gallery" href="./imgs/dock.png">
-                                <img class="img-thumbnail" src="./imgs/dock.png" />
-                                </a>
-                        </div>
-                        <div class="m-3">
-                                <a data-fancybox="gallery" href="./imgs/snowMtns.png">
-                                <img class="img-thumbnail" src="./imgs/snowMtns.png" />
-                                </a>
-                        </div>
-                        <div class="m-3">
-                                <a data-fancybox="gallery" href="./imgs/pinon.png">
-                                <img class="img-thumbnail" src="./imgs/pinon.png" />
-                                </a>
-                        </div>
-                        <div class="m-3">
-                            <a data-fancybox="gallery" href="./imgs/sandia.png">
-                            <img class="img-thumbnail" src="./imgs/sandia.png" />
-                            </a>
-                        </div>
-                        <div class="m-3">
-                            <a data-fancybox="gallery" href="./imgs/sandiaSnow.png">
-                            <img class="img-thumbnail" src="./imgs/sandiaSnow.png" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Projects -->
-        <section id="projects" class="container-fluid">
-            
-            <div>
-                <h2 class="m-5 text-center">Code <span class="bi-arrow-down-circle-fill t"></span></h2>
-                
-            </div>
-                <div
-                    class="
-                        scrolling-wrapper
-                        row
-                        flex-row flex-nowrap
-                        mt-4
-                        mb-4
-                        pb-4
-                        pt-4
-                        projects
-                    "
-                >
-                    <div class="col-5">
-                        <div class="card bg-dark project">
-                            <img src="./imgs/iu-2.png" class="card-img" alt="..." />
-                            <div class="card-img-overlay">
-                                <h5 class="card-title"></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-5">
-                        <div class="card bg-dark project">
-                            <img src="./imgs/iu-2.png" class="card-img" alt="..." />
-                            <div class="card-img-overlay">
-                                <h5 class="card-title"></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-5">
-                        <div class="card bg-dark project">
-                            <img src="./imgs/iu-2.png" class="card-img" alt="..." />
-                            <div class="card-img-overlay">
-                                <h5 class="card-title"></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-5">
-                        <div class="card bg-dark project">
-                            <img src="./imgs/iu-2.png" class="card-img" alt="..." />
-                            <div class="card-img-overlay">
-                                <h5 class="card-title"></h5>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </section>
-        <!-- Offcanvas contact form -->
-        <div
-            class="offcanvas offcanvas-start"
-            data-bs-scroll="true"
-            tabindex="-1"
-            id="offcanvasWithBothOptions"
-            aria-labelledby="offcanvasWithBothOptionsLabel">
-            <div class="offcanvas-header oct">
-                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                    Contact Me
-                </h5>
-                <button
-                    type="button"
-                    class="btn-close text-reset"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"
-                ></button>
-            </div>
-            <!-- Contact Form -->
-            <div class="offcanvas-body ocb">
-                <form action="./apis/" id="contact" method="post" novalidate>
-                    <div class="form-floating m-2">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-                        <label for="floatingInput">Name</label>
-                    </div>
-                    <div class="form-floating m-2">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="email@your-email.com">
-                        <label for="floatingInput">Email Address</label>
-                        
-                    </div>
-                    <div class="form-floating m-2">
-                        <input type="text" class="form-control" id="subject" name="subject" placeholder="subject">
-                        <label for="floatingInput">Subject</label>
-                    </div>
-                    <div class="form-floating m-2">
-                        <textarea class="form-control" id="message" name="message" maxlength="2000" rows="3" placeholder="Type your message here. (Max 2,000 characters.)" style="height: auto;"></textarea>
-                        <label for="floatingTextarea">Message (Max 2000 chatacters)</label>
-                        <br/>
-                        <div class="g-recaptcha" data-sitekey="6LezTSAcAAAAAHac_GZ-LmvxDZiKfeu2IJ6-Bqk1"></div>
-                        <br/>
-                    </div>
-                        <button class="btn btn-secondary m-2" type="submit">SEND</button>
-                    </div>
-                </form>
-                <div id="output-area"></div>
-            </div>
-        </div>
-        <footer
-            class="
-                d-flex
-                flex-wrap
-                justify-content-between
-                align-items-center
-                fixed-bottom
-                pt-1
-            "
-        >
-            <div class="col-md-4 d-flex align-items-center">
-                <span class="text-dark ms-2">© Michael Kemm</span>
-            </div>
-        </footer>
-        <!-- fancy js -->
-        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-            crossorigin="anonymous"
-        ></script>
-        <!-- jquery for form -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script crossorigin="anonymous" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-F6h55Qw6sweK+t7SiOJX+2bpSAa3b/fnlrVCJvmEj1A="
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-0Yg/eibVdKyxkuVo1Qwh0DspoUCHvSbm/oOoYVz32BQ="
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
-        <!-- Google reCAPTCHA -->
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-        <!-- custom jquery -->
-        <script src="./script.js"></script>
-       
-    </body>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--fancy box-->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+		/>
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+			crossorigin="anonymous"
+		/>
+		<!-- Bootstrap Icons -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+		/>
+		<!-- Local CSS -->
+		<link rel="stylesheet" href="style.css" />
+		<title>Michael Kemm</title>
+	</head>
+	<body>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<i class="bi bi-hurricane"></i>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="bi-arrow-down-circle-fill"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="#about"
+								>About</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href=""
+								data-bs-toggle="offcanvas"
+								data-bs-target="#offcanvasRight"
+								aria-controls="offcanvasRight"
+							>
+								Photography</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="#projects"
+								>Projects</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link active"
+								href=""
+								data-bs-toggle="offcanvas"
+								data-bs-target="#offcanvasWithBothOptions"
+								aria-controls="offcanvasWithBothOptions"
+								>Contact</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- About Section -->
+		<section id="about" class="about mx-5">
+			<div class="container">
+				<div class="row">
+					<div class="col md-6">
+						<div class="card-body mx-1">
+							<img
+								class="img-thumbnail"
+								src="./imgs/mk.png"
+								alt="Picture of the stud who created this website."
+							/>
+							<p class="card-text mt-2">
+								Software Developer | Amature Photographer |
+								Hiker
+							</p>
+						</div>
+					</div>
+					<div class="col md-6">
+						<div class="card-body mx-1">
+							<h2 class="card-title">Who I am</h2>
+							<ul>
+								<li>I lived in Denver.</li>
+								<li>I moved to Los Angeles.</li>
+								<li>I now live in Albuquerque.</li>
+								<li>I play video games more than I should.</li>
+								<li>Or maybe I don't play them enough?</li>
+								<li>
+									I like taking pictures (click on
+									photography).
+								</li>
+								<li>
+									I like getting outdoors and going on hikes,
+								</li>
+								<li>I like telling computers what to do.</li>
+								<li>
+									Check out my code if you want to see how I
+									do that.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- On page link to photography -->
+		<h2 id="ph2" class="m-5 text-center">
+			<a
+				class="nav-link active"
+				aria-current="page"
+				data-bs-toggle="offcanvas"
+				data-bs-target="#offcanvasRight"
+				aria-controls="offcanvasRight"
+			>
+				Photography</a
+			>
+		</h2>
+		<!-- On screen link to contact form -->
+		<h2 id="ph2" class="m-5 text-center">
+			<a
+				class="nav-link active"
+				href=""
+				data-bs-toggle="offcanvas"
+				data-bs-target="#offcanvasWithBothOptions"
+				aria-controls="offcanvasWithBothOptions"
+				>Contact</a
+			>
+		</h2>
+
+		<!--Photography-->
+		<section id="pics">
+			<div
+				class="offcanvas offcanvas-end"
+				tabindex="-1"
+				id="offcanvasRight"
+				aria-labelledby="offcanvasRightLabel"
+			>
+				<div class="offcanvas-header oct">
+					<h5
+						class="offcanvas-title"
+						id="offcanvasWithBothOptionsLabel"
+					>
+						Photography
+					</h5>
+					<button
+						type="button"
+						class="btn-close text-reset"
+						data-bs-dismiss="offcanvas"
+						aria-label="Close"
+					></button>
+				</div>
+				<div class="offcanvas-body ocb">
+					<div class="">
+						<div class="m-3">
+							<a data-fancybox="gallery" href="./imgs/hall.png">
+								<img
+									class="img-thumbnail"
+									src="./imgs/hall.png"
+									alt="Black and white photo of an outdoor hall."
+								/>
+							</a>
+						</div>
+						<div class="m-3">
+							<a data-fancybox="gallery" href="./imgs/dock.png">
+								<img
+									class="img-thumbnail"
+									src="./imgs/dock.png"
+									alt="Picture of nighttime ocean dock."
+								/>
+							</a>
+						</div>
+						<div class="m-3">
+							<a
+								data-fancybox="gallery"
+								href="./imgs/snowMtns.png"
+							>
+								<img
+									class="img-thumbnail"
+									src="./imgs/snowMtns.png"
+									alt="Picture of foggy mountain trees."
+								/>
+							</a>
+						</div>
+						<div class="m-3">
+							<a data-fancybox="gallery" href="./imgs/pinon.png">
+								<img
+									class="img-thumbnail"
+									src="./imgs/pinon.png"
+									alt="Picture of pinon nuts with a pine cone on top."
+								/>
+							</a>
+						</div>
+						<div class="m-3">
+							<a data-fancybox="gallery" href="./imgs/sandia.png">
+								<img
+									class="img-thumbnail"
+									src="./imgs/sandia.png"
+									alt="Black and white photo of sandia mountains."
+								/>
+							</a>
+						</div>
+						<div class="m-3">
+							<a
+								data-fancybox="gallery"
+								href="./imgs/sandiaSnow.png"
+							>
+								<img
+									class="img-thumbnail"
+									src="./imgs/sandiaSnow.png"
+									alt="Black and white photo of sandia mountains covered in snow."
+								/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Projects -->
+		<section id="projects" class="container-fluid">
+			<div>
+				<h2 class="m-5 text-center">
+					Code <span class="bi-arrow-down-circle-fill t"></span>
+				</h2>
+			</div>
+			<div
+				class="
+					scrolling-wrapper
+					row
+					flex-row flex-nowrap
+					mt-4
+					mb-4
+					pb-4
+					pt-4
+					projects
+				"
+			>
+				<div class="col-5">
+					<div class="card bg-dark project">
+						<img src="./imgs/iu-2.png" class="card-img" alt="..." />
+						<div class="card-img-overlay">
+							<h5 class="card-title"></h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-5">
+					<div class="card bg-dark project">
+						<img src="./imgs/iu-2.png" class="card-img" alt="..." />
+						<div class="card-img-overlay">
+							<h5 class="card-title"></h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-5">
+					<div class="card bg-dark project">
+						<img src="./imgs/iu-2.png" class="card-img" alt="..." />
+						<div class="card-img-overlay">
+							<h5 class="card-title"></h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-5">
+					<div class="card bg-dark project">
+						<img src="./imgs/iu-2.png" class="card-img" alt="..." />
+						<div class="card-img-overlay">
+							<h5 class="card-title"></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Offcanvas contact form -->
+		<div
+			class="offcanvas offcanvas-start"
+			data-bs-scroll="true"
+			tabindex="-1"
+			id="offcanvasWithBothOptions"
+			aria-labelledby="offcanvasWithBothOptionsLabel"
+		>
+			<div class="offcanvas-header oct">
+				<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+					Contact Me
+				</h5>
+				<button
+					type="button"
+					class="btn-close text-reset"
+					data-bs-dismiss="offcanvas"
+					aria-label="Close"
+				></button>
+			</div>
+			<!-- Contact Form -->
+			<div class="offcanvas-body ocb">
+				<form action="./apis/" id="contact" method="post" novalidate>
+					<div class="form-floating m-2">
+						<input
+							type="text"
+							class="form-control"
+							id="name"
+							name="name"
+							placeholder="Name"
+						/>
+						<label for="floatingInput">Name</label>
+					</div>
+					<div class="form-floating m-2">
+						<input
+							type="email"
+							class="form-control"
+							id="email"
+							name="email"
+							placeholder="email@your-email.com"
+						/>
+						<label for="floatingInput">Email Address</label>
+					</div>
+					<div class="form-floating m-2">
+						<input
+							type="text"
+							class="form-control"
+							id="subject"
+							name="subject"
+							placeholder="subject"
+						/>
+						<label for="floatingInput">Subject</label>
+					</div>
+					<div class="form-floating m-2">
+						<textarea
+							class="form-control"
+							id="message"
+							name="message"
+							maxlength="2000"
+							rows="3"
+							placeholder="Type your message here. (Max 2,000 characters.)"
+							style="height: auto"
+						></textarea>
+						<label for="floatingTextarea"
+							>Message (Max 2000 chatacters)</label
+						>
+						<br />
+						<div
+							class="g-recaptcha"
+							data-sitekey="6LezTSAcAAAAAHac_GZ-LmvxDZiKfeu2IJ6-Bqk1"
+						></div>
+						<br />
+					</div>
+					<div>
+						<button class="btn btn-secondary m-2" type="submit">
+							SEND
+						</button>
+					</div>
+				</form>
+				<div id="output-area"></div>
+			</div>
+		</div>
+		<footer
+			class="
+				d-flex
+				flex-wrap
+				justify-content-between
+				align-items-center
+				fixed-bottom
+				pt-1
+			"
+		>
+			<div class="col-md-4 d-flex align-items-center">
+				<span class="text-dark ms-2">© Michael Kemm</span>
+			</div>
+		</footer>
+		<!-- fancy js -->
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+			crossorigin="anonymous"
+		></script>
+		<!-- jquery for form -->
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<script
+			crossorigin="anonymous"
+			integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"
+		></script>
+		<script
+			crossorigin="anonymous"
+			integrity="sha256-F6h55Qw6sweK+t7SiOJX+2bpSAa3b/fnlrVCJvmEj1A="
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"
+		></script>
+		<script
+			crossorigin="anonymous"
+			integrity="sha256-0Yg/eibVdKyxkuVo1Qwh0DspoUCHvSbm/oOoYVz32BQ="
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"
+		></script>
+		<!-- Google reCAPTCHA -->
+		<script
+			src="https://www.google.com/recaptcha/api.js"
+			async
+			defer
+		></script>
+		<!-- custom jquery -->
+		<script src="./script.js"></script>
+	</body>
 </html>
