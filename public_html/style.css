@@ -1,5 +1,5 @@
 body {
-	font-family: "system-ui";
+	font-family: "Times New Roman", Times, serif;
 	background-color: fff;
 }
 .about {
@@ -26,12 +26,15 @@ h1 {
 }
 
 #ph2 a {
-	color: #3a136e;
+	border-radius: 1% / 50%;
+	box-shadow: 0 3px 0.4em #212529;
+	background-color: #212529;
+	color: olive;
 	transition: color ease-in 300ms;
 }
 /* #3a136e */
 #ph2 a:hover {
-	color: #529605;
+	color: #417396;
 }
 
 body div textarea {
