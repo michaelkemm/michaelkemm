@@ -10,7 +10,7 @@ const { check, validationResult } = require("express-validator")
 const validation = [
 	check("name", "A valid name is required.").not().isEmpty().trim().escape(),
 	check("email", "Please provide a valid email.").isEmail(),
-	// check("subject").optional().trim().escape(),
+	check("subject").optional().trim().escape(),
 	check("message", " A message of 2000 characters or less is required.")
 		.trim()
 		.escape()
