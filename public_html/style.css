@@ -1,62 +1,85 @@
 body {
-    color: #fff;
-    font-family: "system-ui";
+	font-family: "system-ui";
+	background-color: fff;
 }
 .about {
-    margin-top: 100px;
-    background-color: #212529;
-    color: #fff;
+	margin-top: 100px;
+	background-color: #212529;
+	color: #fff;
 
-    box-shadow: 0 3px 0.4em olive;
-    border-radius: 10px;
+	box-shadow: 0 3px 0.4em #808000;
+	border-radius: 10px;
 }
 
 .projects {
-    background-color: #212529;
+	background-color: #212529;
 }
 
 footer {
-    background-color: olive;
-    /*height: 5em;*/
+	background-color: olive;
+	/*height: 5em;*/
 }
 
 h1 {
-    font-weight: 800;
-    font-size: 3em;
+	font-weight: 800;
+	font-size: 3em;
+}
+
+#ph2 a {
+	color: #3a136e;
+	transition: color ease-in 300ms;
+}
+/* #3a136e */
+#ph2 a:hover {
+	color: #529605;
+}
+
+body div textarea {
+	height: 500px;
+}
+
+li {
+	margin-bottom: 0.75em;
+	list-style-type: none;
+	font-size: larger;
 }
 
 .scrolling-wrapper {
-    overflow-x: auto;
-    box-shadow: 0 0 0.5em #212529;
+	overflow-x: auto;
+	box-shadow: 0 0 0.5em #212529;
 }
 
 .card-block {
-    height: 30vh;
-    width: 35vw;
-    background-color: #fff;
-    border: none;
-    background-position: center;
-    background-size: cover;
-    transition: all 0.2s ease-in-out !important;
-    border-radius: 24px;
-    &:hover {
-        transform: translateY(-5px);
-        box-shadow: none;
-    }
+	height: 30vh;
+	width: 35vw;
+	background-color: #fff;
+	border: none;
+	background-position: center;
+	background-size: cover;
+	transition: all 0.2s ease-in-out !important;
+	border-radius: 24px;
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: none;
+	}
 }
 .input-group-text {
-    background-color: olive;
+	background-color: olive;
 }
 
 .ocb {
-    background-color: olive;
+	background-color: #417396;
 }
 
 .oct {
-    background-color: #212529;
-    color: #fff;
+	background-color: #212529;
+	color: #fff;
 }
 
 .project {
-    box-shadow: 0 2px 0.3em 0.5em olive;
+	box-shadow: 0 2px 0.3em 0.5em olive;
+}
+
+.navbar-toggler {
+	border-radius: 10% / 50%;
 }

@@ -4,10 +4,8 @@
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <!-- Local CSS -->
-        <link rel="stylesheet" href="style.css" />
-
+        <!--fancy box-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
         <!-- Bootstrap CSS -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
@@ -15,20 +13,20 @@
             integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
             crossorigin="anonymous"
         />
-
         <!-- Bootstrap Icons -->
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
         />
-
+        <!-- Local CSS -->
+        <link rel="stylesheet" href="style.css" />
         <title>Michael Kemm</title>
     </head>
     <body>
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                  <i class="bi bi-hurricane"></i>
+                    <i class="bi bi-hurricane"></i>
                 </a>
                 <button
                     class="navbar-toggler"
@@ -39,24 +37,25 @@
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
-                    <span class="navbar-toggler-icon"></span>
+                <span class="bi-arrow-down-circle-fill"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a
-                                class="nav-link active"
-                                aria-current="page"
-                                href="#about"
-                                >About</a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="#about"
+                            >About</a
                             >
                         </li>
                         <li class="nav-item">
                             <a
-                                    class="nav-link active"
-                                    aria-current="page"
-                                    href="#pics"
-                            >Photography</a
+                            class="nav-link active"
+                            aria-current="page"
+                            href=""
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            Photography</a
                             >
                         </li>
                         <li class="nav-item">
@@ -77,135 +76,172 @@
         </nav>
         <!-- About Section -->
         <section id="about" class=" about mx-5">
-            <div class="container">
-               <div class="row">
-                   <div class="col md-6">
-                       <div class="card-body mx-1">
-                           <h2 class="card-title">About Me</h2>
-                           <p class="card-text">
-                               Bring to the table win-win survival strategies to ensure
-                               proactive domination. At the end of the day, going forward,
-                               a new normal that has evolved from generation X is on the
-                               runway heading towards a streamlined cloud solution. User
-                               generated content in real-time will have multiple
-                               touchpoints for offshoring.
-                           </p>
-                       </div>
-                   </div>
-                   <div class="col md-6">
-                       <div class="card-body mx-1">
-                           <h2 class="card-title">About Me</h2>
-                           <p class="card-text">
-                               Bring to the table win-win survival strategies to ensure
-                               proactive domination. At the end of the day, going forward,
-                               a new normal that has evolved from generation X is on the
-                               runway heading towards a streamlined cloud solution. User
-                               generated content in real-time will have multiple
-                               touchpoints for offshoring.
-                           </p>
-                       </div>
-                   </div>
-               </div>
-            </div>
-        </section>
-        <!--        Photography section-->
-        <section id="pics" class="container-fluid">
-            <h2 class="mt-5">Photography</h2>
-            <div class="container">
-                <div id="carouselExampleFade" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./imgs/iu-1.png" class="d-block w-100" alt="...">
+                <div class="container">
+                    <div class="row">
+                        <div class="col md-6">
+                            <div class="card-body mx-1">
+                                <img class="img-thumbnail" src="./imgs/mk.png" />
+                                <p class="card-text mt-2">
+                                    Software Developer | Amature Photographer | Hiker
+                                </p>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="./imgs/iu-2.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imgs/iu-3.png" class="d-block w-100" alt="...">
+                        <div class="col md-6">
+                            <div class="card-body mx-1">
+                                <h2 class="card-title">Who I am</h2>
+                                <ul>
+                                    <li>
+                                    I lived in Colorado.</li>
+                                    <li>
+                                    I moved to Los Angeles.
+                                    </li>
+                                    <li>
+                                    I now live in Albuquerque.
+                                    </li>
+                                    <li>
+                                    I play video games more than I should. 
+                                    </li>
+                                    <li>
+                                    Or maybe I don't play them enough? 
+                                    </li>
+                                    <li>
+                                    I like taking pictures (click on photography).  
+                                    </li>
+                                    <li>
+                                    I like getting outdoors and going on hikes,  
+                                    </li>
+                                    <li>
+                                    I like telling computers what to do. 
+                                    </li>
+                                    <li>
+                                     Check out my code if you want to see how I do that.  
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                </div>
+        </section>
+        <!-- On page link to photography -->
+        <h2 id="ph2" class="m-5 text-center"><a
+            class="nav-link active"
+            aria-current="page"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            Photography</a
+            >
+        <!-- On screen link to contact form -->
+        </h2>
+        <h2 id="ph2" class="m-5 text-center">
+            <a class="nav-link active"  href="" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions""
+                >Contact</a></h2>
+        <!--Photography-->
+        <section id="pics">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header oct">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        Photography
+                    </h5>
+                    <button
+                        type="button"
+                        class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="offcanvas-body ocb">
+                    <div class="">
+                        <div class="m-3">
+                                <a data-fancybox="gallery" href="./imgs/hall.png">
+                                <img class="img-thumbnail" src="./imgs/hall.png" />
+                                </a>
+                        </div>
+                        <div class="m-3">
+                                <a data-fancybox="gallery" href="./imgs/dock.png">
+                                <img class="img-thumbnail" src="./imgs/dock.png" />
+                                </a>
+                        </div>
+                        <div class="m-3">
+                                <a data-fancybox="gallery" href="./imgs/snowMtns.png">
+                                <img class="img-thumbnail" src="./imgs/snowMtns.png" />
+                                </a>
+                        </div>
+                        <div class="m-3">
+                                <a data-fancybox="gallery" href="./imgs/pinon.png">
+                                <img class="img-thumbnail" src="./imgs/pinon.png" />
+                                </a>
+                        </div>
+                        <div class="m-3">
+                            <a data-fancybox="gallery" href="./imgs/sandia.png">
+                            <img class="img-thumbnail" src="./imgs/sandia.png" />
+                            </a>
+                        </div>
+                        <div class="m-3">
+                            <a data-fancybox="gallery" href="./imgs/sandiaSnow.png">
+                            <img class="img-thumbnail" src="./imgs/sandiaSnow.png" />
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </section>
         <!-- Projects -->
         <section id="projects" class="container-fluid">
-            <h2 class="mt-5">Projects</h2>
-            <p class="subtitle">
-                <!-- Horizontal scrolling -->
-            </p>
-            <div
-                class="
-                    scrolling-wrapper
-                    row
-                    flex-row flex-nowrap
-                    mt-4
-                    pb-4
-                    pt-4
-                    projects
-                "
-            >
-                <div class="col-5">
-                    <div class="card bg-dark project">
-                        <img src="./imgs/iu-2.png" class="card-img" alt="..." />
-                        <div class="card-img-overlay">
-                            <h5 class="card-title"></h5>
+            <h2 class="m-5 text-center">Code</h2>
+                <div
+                    class="
+                        scrolling-wrapper
+                        row
+                        flex-row flex-nowrap
+                        mt-4
+                        mb-4
+                        pb-4
+                        pt-4
+                        projects
+                    "
+                >
+                    <div class="col-5">
+                        <div class="card bg-dark project">
+                            <img src="./imgs/iu-2.png" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title"></h5>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-5">
-                    <div class="card bg-dark project">
-                        <img src="./imgs/iu-2.png" class="card-img" alt="..." />
-                        <div class="card-img-overlay">
-                            <h5 class="card-title"></h5>
+                    <div class="col-5">
+                        <div class="card bg-dark project">
+                            <img src="./imgs/iu-2.png" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title"></h5>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-5">
-                    <div class="card bg-dark project">
-                        <img src="./imgs/iu-2.png" class="card-img" alt="..." />
-                        <div class="card-img-overlay">
-                            <h5 class="card-title"></h5>
+                    <div class="col-5">
+                        <div class="card bg-dark project">
+                            <img src="./imgs/iu-2.png" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title"></h5>
+                            </div>
                         </div>
                     </div>
+                    <div class="col-5">
+                        <div class="card bg-dark project">
+                            <img src="./imgs/iu-2.png" class="card-img" alt="..." />
+                            <div class="card-img-overlay">
+                                <h5 class="card-title"></h5>
+                            </div>
+                        </div>
                 </div>
-                <di class="col-5">
-                  <div class="card bg-dark project">
-                    <img src="./imgs/iu-2.png" class="card-img" alt="..." />
-                    <div class="card-img-overlay">
-                        <h5 class="card-title"></h5>
-                    </div>
-                </div>
-              
             </div>
         </section>
         <!-- Offcanvas contact form -->
-        <section class="container ">
-            <button
-                class="btn btn-secondary m-5"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasWithBothOptions"
-                aria-controls="offcanvasWithBothOptions"
-            >
-                Contact
-            </button>
-        </section>
         <div
             class="offcanvas offcanvas-start"
             data-bs-scroll="true"
             tabindex="-1"
             id="offcanvasWithBothOptions"
-            aria-labelledby="offcanvasWithBothOptionsLabel"
-        >
+            aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header oct">
                 <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
                     Contact Me
@@ -217,27 +253,35 @@
                     aria-label="Close"
                 ></button>
             </div>
+            <!-- Contact Form -->
             <div class="offcanvas-body ocb">
-              <form>
-                <div class="form-group m-2">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-                </div>
-                <div class="form-group m-2">
-                    <label for="email">Email Address</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="email@your-email.com">
-                </div>
-                <div class="form-group m-2">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" name="message" maxlength="2000" rows="3" placeholder="Type your message here. (Max 2,000 characters.)" required=""></textarea>
-                </div>
-                    <button class="btn btn-secondary m-2" type="submit">SEND</button>
-                </div>
+                <form action="./apis/" id="contact" method="post" novalidate>
+                    <div class="form-floating m-2">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                        <label for="floatingInput">Name</label>
+                    </div>
+                    <div class="form-floating m-2">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="email@your-email.com">
+                        <label for="floatingInput">Email Address</label>
+                        
+                    </div>
+                    <div class="form-floating m-2">
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="subject">
+                        <label for="floatingInput">Subject</label>
+                    </div>
+                    <div class="form-floating m-2">
+                        <textarea class="form-control" id="message" name="message" maxlength="2000" rows="3" placeholder="Type your message here. (Max 2,000 characters.)" style="height: auto;"></textarea>
+                        <label for="floatingTextarea">Message (Max 2000 chatacters)</label>
+                        <br/>
+                        <div class="g-recaptcha" data-sitekey="6LezTSAcAAAAAHac_GZ-LmvxDZiKfeu2IJ6-Bqk1"></div>
+                        <br/>
+                    </div>
+                        <button class="btn btn-secondary m-2" type="submit">SEND</button>
+                    </div>
+                </form>
                 <div id="output-area"></div>
-            </form>
             </div>
         </div>
-
         <footer
             class="
                 d-flex
@@ -245,37 +289,33 @@
                 justify-content-between
                 align-items-center
                 fixed-bottom
-                mt-5
+                pt-1
             "
         >
             <div class="col-md-4 d-flex align-items-center">
-
                 <span class="text-dark">© Michael Kemm</span>
             </div>
-
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3">
-                    <i class="bi bi-linkedin m-5"></i>
-                </li>
-                <li class="ms-3">
-                    <i class="bi bi-github m-5"></i>
-                </li>
-            </ul>
         </footer>
-
-        <!-- Optional JavaScript; choose one of the two! -->
-        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+        <!-- fancy js -->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
             crossorigin="anonymous"
         ></script>
-
-        <!-- Option 2: Separate Popper and Bootstrap JS -->
-        <!--
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
--->
+        <!-- jquery for form -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script crossorigin="anonymous" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-F6h55Qw6sweK+t7SiOJX+2bpSAa3b/fnlrVCJvmEj1A="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-0Yg/eibVdKyxkuVo1Qwh0DspoUCHvSbm/oOoYVz32BQ="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+        <!-- Google reCAPTCHA -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <!-- custom jquery -->
+        <script src="./script.js"></script>
+       
     </body>
 </html>
