@@ -1,5 +1,5 @@
 body {
-	font-family: "Times New Roman", Times, serif;
+	font-family: 'Times New Roman', Times, serif;
 	background-color: fff;
 }
 .about {
@@ -40,6 +40,9 @@ h1 {
 body div textarea {
 	height: 500px;
 }
+ul {
+	padding: 0;
+}
 
 li {
 	margin-bottom: 0.75em;
@@ -50,6 +53,12 @@ li {
 .scrolling-wrapper {
 	overflow-x: auto;
 	box-shadow: 0 0 0.5em #212529;
+}
+
+.card-title {
+	color: #fff;
+	text-align: center;
+	padding-top: 0.25rem;
 }
 
 .card-block {
